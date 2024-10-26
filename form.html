@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lease & Drive</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="form.css" />
+       
+</head>
+<body>
+<div class="wrap">
+    <nav class="nav">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+<div class="nav-menu" id="navMenu">
+    <ul>
+        <li><a href="#" class="link active">Home</a></li>
+        <li><a href="#" class="link">Contact</a></li>
+        <li><a href="#" class="link">Blog</a></li>
+        <li><a href="#" class="link">Safety</a></li>
+        <li><a href="#" class="link">Careers</a></li>
+        <li><a href="#" class="link">Services</a></li>
+        <li><a href="#" class="link">About Us</a></li>
+    </ul>
+</div>
+<div class="nav-button">
+    <button class="btn ht-btn" id="LoginBtn"onclick="login()"> Sign In</button>
+    <button class="btn bt-btn" id="signupBtn"onclick="signup()">Sign Up</button>
+</div>
+<div class="nav-menu-btn">
+    <i class="bx bx-menu"onclick="myMenuFunction()"></i>
+</div>
+    </nav>
+    <!------------------------ form-box ------------------------------>
+<div class="form-box">
+ <!------------------------ login-form ------------------------------>
+ <div class="login-container" id="login">
+    <div class="top-">
+        <span>Don't have an Account? <a href="#" onclick="signup()">Sign Up</a></span>
+        <header>Log In</header>
+        </div>
+         <div class="input-box">
+            <input type="text" class="input-field" placeholder="UserName or Email">
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Password">
+            <i class="bx bx-lock-alt"></i>
+        </div>
+        <div class="input-box">
+            <input type="submit" class="submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox"  id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+    </div>
+    <!------------------------ registration-form ------------------------------>
+<div class="signup-container" id="signup">
+<div class="top-">
+    <span>Have an Account? <a  href="#" onclick="login()">login</a></span>
+    <header>Sign Up</header>
+    </div>
+      <div class="two-forms">
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="first name">
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Last name">
+            <i class="bx bx-user"></i>
+        </div>
+      </div>
+          <div class="input-box">
+            <label for="birthday">Birthday:</label>
+            <input type="date" value="2017-06-01" />
+            </div>
+          <div class="input-box">
+        <input type="email" class="input-field" id="email" placeholder="Email" >
+        <i class="bx bx-envelope"></i>
+        <span id="email-error"></span>
+    </div>
+    <div class="input-box">
+        <input type="text"class ="input-field" name="license" pattern="A[0-9]{7}" placeholder="Dl-No">
+        <i class="bx bx-lock-alt"></i>
+    </div>
+    <div class="input-box">
+        <input type="submit" class="submit" onclick="handleclick()" value="Register">
+        </div>
+        <div class="two-col">
+            <div class="one">
+                <input type="checkbox"  id="signup-check">
+                <label for="signup-check"> Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="#">Terms & Conditions</a></label>
+            </div>
+        </div>
+
+    </div>
+    </div>
+ </div>
+
+  <script src="form.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- <input type="date" id="birthday" name="birthday"> -->
+
+<!-- <input type="password" class="input-field" placeholder="Dl-no"> -->
